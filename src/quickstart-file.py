@@ -31,7 +31,7 @@ print("===== Read File - remote =====")
 read_image_url = "https://learn.microsoft.com/azure/ai-services/computer-vision/media/quickstarts/presentation.png"
 
 # Call API with URL and raw response (allows you to get the operation location)
-read_response = computervision_client.read(read_image_url,  raw=True, model_version='latest')
+read_response = computervision_client.read(read_image_url, raw=True, model_version='latest')
 
 # Get the operation location (URL with an ID at the end) from the response
 read_operation_location = read_response.headers["Operation-Location"]
